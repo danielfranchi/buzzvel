@@ -1,78 +1,111 @@
 import Button from "../components/Button";
-import Press from "../assets/press.svg"; // Importe o SVG dos logos
-import TeacherImg from "../assets/teacher.svg";
+
 import ChatImg from "../assets/chat.svg";
-import StudentImg from "../assets/student.svg";
 import Grifo from "../assets/grifo.svg";
+import IconsCollection1 from "../assets/icons-collection1.svg";
+import IconsCollection2 from "../assets/icons-collection2.svg";
+import IconsCollection3 from "../assets/icons-collection3.svg";
+import IconsCollection4 from "../assets/icons-collection4.svg";
+import IconsCollection5 from "../assets/icons-collection5.svg";
 import PlayCircle from "../assets/play-circle.svg";
+import StudentImg from "../assets/student.svg";
+import TeacherImg from "../assets/teacher.svg";
 
 export default function Hero() {
   return (
     <section className="px-4 py-10 md:px-8 md:py-20 bg-white">
       <div className="w-full max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-        
-        {/* Esquerda - Texto */}
-        <div className="relative text-center md:text-left">
+        <div className="relative text-left  pl-4 md:pl-0">
           <h1 className="text-[#0F172A] font-roboto font-extrabold text-4xl md:text-5xl lg:text-6xl leading-[110%]">
             Teach students <br />
             <span className="inline-block">worldwide</span>
           </h1>
 
-          {/* Grifo dentro da div relativa */}
-          <img 
-            src={Grifo} 
-            alt="Grifo" 
-            className="absolute h-auto w-24 md:w-32 lg:w-40 top-[11%] left-[2%]"
+          <img
+            src={Grifo}
+            alt="Grifo"
+            className="absolute h-auto w-24 left-4 top-8 sm:left-[10px] sm:top-[50px] md:w-32 lg:w-40 md:left-[1%] md:top-[11%]"
           />
 
           <p className="text-[#0F172A] font-roboto text-lg md:text-xl lg:text-2xl leading-[160%] mt-8">
-            <span className="block">Amet nunc diam orci duis ut sit diam arcu, nec.</span>
-            <span className="block">Eleifend proin massa tincidunt viverra lectus pulvinar.</span>
-            <span className="block">Nunc ipsum est pellentesque turpis ultricies.</span>
+            <span className="block md:pl-0">
+              Amet nunc diam orci duis ut sit diam arcu, nec.
+            </span>
+            <span className="block md:pl-0">
+              Eleifend proin massa tincidunt viverra lectus pulvinar.
+            </span>
+            <span className="block md:pl-0">
+              Nunc ipsum est pellentesque turpis ultricies.
+            </span>
           </p>
 
-          <div className="relative flex flex-col md:flex-row items-center md:items-start gap-6 mt-10">
+          <div className="relative flex flex-row items-center gap-6 mt-10 md:flex-row md:pl-0">
             <Button variant="orange">Sign Up Now</Button>
 
-            {/* PlayCircle dentro da div relativa */}
-            <div className="flex items-center gap-2 mt-2">
-              <img 
-                src={PlayCircle} 
-                alt="PlayCircle" 
-                className="h-auto"
-              />
-              
-              <a href="#demo" className="text-[#2563EB] font-roboto font-medium text-lg">
+            <div className="flex items-center gap-2">
+              <img src={PlayCircle} alt="PlayCircle" className="h-auto" />
+              <a
+                href="#demo"
+                className="text-[#2563EB] font-roboto font-medium text-lg"
+              >
                 View Demo
               </a>
             </div>
           </div>
 
-          <div className="mt-12">
-            <img src={Press} alt="Press Logos" className="max-w-full h-auto" />
+          <div className="mt-18 flex flex-col items-start gap-4 text-[#475569] md:pl-0 md:flex-row">
+            <h2 className="font-roboto font-normal text-[16px] leading-[140%] tracking-normal">
+              Trusted by leading companies
+            </h2>
+
+            <div className="flex justify-start items-center gap-12 mt-4 md:mt-0 md:flex-row">
+              <img
+                src={IconsCollection1}
+                alt="Icon 1"
+                className="w-[25.21px] h-[32px]"
+              />
+              <img
+                src={IconsCollection2}
+                alt="Icon 2"
+                className="w-[25.21px] h-[32px]"
+              />
+              <img
+                src={IconsCollection3}
+                alt="Icon 3"
+                className="w-[25.21px] h-[32px]"
+              />
+              <img
+                src={IconsCollection4}
+                alt="Icon 4"
+                className="w-[25.21px] h-[32px]"
+              />
+              <img
+                src={IconsCollection5}
+                alt="Icon 5"
+                className="w-[25.21px] h-[32px]"
+              />
+            </div>
           </div>
         </div>
 
-        {/* Direita - Imagens */}
-        <div className="relative w-full h-[500px] flex justify-center items-center">
-          <img 
-            src={TeacherImg} 
-            alt="Teacher" 
+        <div className="relative w-full h-[500px] flex justify-center items-center right-10">
+          <img
+            src={TeacherImg}
+            alt="Teacher"
             className="absolute w-64 h-auto scale-90 top-[40%] left-[35%] transform -translate-x-1/2"
           />
 
-          <img 
-            src={ChatImg} 
-            alt="Chat" 
+          <img
+            src={ChatImg}
+            alt="Chat"
             className="absolute w-32 md:w-48 lg:w-56 h-auto top-[10%] left-[50%] transform -translate-x-1/2"
           />
-          <img 
-            src={StudentImg} 
-            alt="Student" 
+          <img
+            src={StudentImg}
+            alt="Student"
             className="absolute w-32 md:w-48 lg:w-56 h-auto top-[10%] left-[80%] transform -translate-x-1/2"
           />
         </div>
-
       </div>
     </section>
   );
