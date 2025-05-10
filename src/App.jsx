@@ -1,4 +1,5 @@
 import React, { Suspense, lazy } from "react";
+import MeetSection from "./components/MeetSection";
 
 const Header = lazy(() => import("./components/Header"));
 const Hero = lazy(() => import("./components/Hero"));
@@ -12,6 +13,7 @@ export default function App() {
       <Hero />
       <Products />
       <TestimonialCard />
+      <MeetSection />
     </Suspense>
   );
 }
