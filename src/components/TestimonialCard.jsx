@@ -5,10 +5,11 @@ import SliderCues from "../assets/slider-cues.svg";
 
 export default function TestimonialCard() {
   return (
-    <div className="relative bg-[#FACC15] h-[620px] grid grid-cols-1 md:grid-cols-2 p-8 items-center rounded-lg shadow-lg">
+    <section className="relative bg-[#FACC15] h-[620px] grid grid-cols-1 md:grid-cols-2 p-8 items-center rounded-lg shadow-lg">
       <img
         src={LeftArrow}
-        alt="Seta Esquerda"
+        alt="Seta para depoimento anterior"
+        loading="lazy"
         className="absolute left-[5%] top-1/2 transform -translate-y-1/2 w-[18px] h-[31.5px] hidden sm:block"
       />
 
@@ -47,7 +48,8 @@ export default function TestimonialCard() {
 
       <img
         src={SliderCues}
-        alt="Indicador do Slider"
+        alt="Indicador do slider de depoimentos"
+        loading="lazy"
         className="absolute bottom-[8%] left-[10%] w-auto h-auto hidden sm:block"
       />
 
@@ -55,15 +57,17 @@ export default function TestimonialCard() {
         <img
           src={MarieImg}
           alt="Marie Poirot"
+          loading="lazy"
           className="absolute left-[0%] top-[-280px] w-auto h-auto sm:left-[5%] sm:top-[40%] md:left-[0%] md:top-[-50%] md:translate-y-[-50%]"
         />
       </div>
 
       <img
         src={RightArrow}
-        alt="Seta Direita"
-        className="absolute right-[3%] transform -translate-y-1/2 w-[18px] h-[31.5px] hidden sm:block"
+        alt="Seta para próximo depoimento"
+        loading="lazy"
+        className="absolute right-[3%] top-1/2 transform -translate-y-1/2 w-[18px] h-[31.5px] hidden sm:block"
       />
-    </div>
+    </section>
   );
 }
