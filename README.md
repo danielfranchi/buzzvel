@@ -20,7 +20,7 @@ A Landing Page Teach Students Buzzvel é uma página moderna e responsiva, proje
 
 ### 🚀 Teach students
 
-[![Teach Students](https://img.shields.io/badge/Teach_Students-Website-2bce3a?style=for-the-badge&logo=steam)](https://stellular-sprite-cd6b8e.netlify.app/)
+[![Teach Students](https://img.shields.io/badge/Teach_Students-Website-2bce3a?style=for-the-badge&logo=steam)](https://frabjous-wisp-d29ad1.netlify.app/)
 
 ```bash
 # Acesse o site neste link:
