@@ -1,5 +1,4 @@
 import ArrowButton from "./ArrowButton";
-
 import CollegioImg from "../assets/colegio.svg";
 
 // eslint-disable-next-line no-unused-vars
@@ -23,13 +22,13 @@ export default function MeetSection() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ amount: 0.3 }}
-          className="hidden md:block font-bold text-[56px] leading-[110%] tracking-normal"
+          className="font-roboto font-extrabold text-[20px] md:text-[56px] leading-[120%] md:leading-[110%] tracking-[0%] text-[#0F172A] max-w-[280px] md:max-w-full"
         >
-          <h1 className="font-roboto font-extrabold text-[32px] md:text-[56px] leading-[120%] md:leading-[110%] tracking-[0%] text-[#0F172A]">
-            Meet international students <br className="block md:hidden" /> &
-            teachers
-          </h1>
+          <span className="block md:inline">Meet international students</span>
+          <br className="block md:hidden" />
+          <span className="block md:inline"> & teachers</span>
         </motion.h1>
+
         <p className="font-roboto font-normal text-[16px] md:text-[20px] leading-[170%] md:leading-[180%] tracking-[0%] text-[#0F172A] mt-4">
           Morbi sit egestas dignissim pharetra, sed amet. Tempus justo senectus
           risus ac vel, velit, nunc. Eget commodo eget in aliquam facilisi
