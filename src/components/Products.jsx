@@ -75,7 +75,7 @@ export default function Products() {
             className="w-full max-w-[700px] h-auto relative"
           />
 
-          <div className="relative top-[-100px] left-[-4%] flex flex-wrap gap-4 z-10">
+          <div className="relative z-10 md:top-[-100px] md:left-[-4%] flex flex-wrap md:gap-4 gap-16 justify-end top-[-60px] left-[-10px]">
             {[
               {
                 category: "Featured",
@@ -112,7 +112,9 @@ export default function Products() {
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: false, amount: 0.3 }}
-                className={card.hidden || ""}
+                className={`${
+                  card.hidden || ""
+                } w-[160px] max-w-[110px] sm:max-w-[200px] md:w-auto ml-auto`}
               >
                 <Card {...card} />
               </motion.div>
