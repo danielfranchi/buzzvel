@@ -24,7 +24,7 @@ A Landing Page Teach Students Buzzvel é uma página moderna e responsiva, proje
 
 ```bash
 # Acesse o site neste link:
-$ https://stellular-sprite-cd6b8e.netlify.app/
+$ https://frabjous-wisp-d29ad1.netlify.app/
 ```
 
 <br />
