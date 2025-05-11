@@ -114,11 +114,13 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative w-full h-[500px] flex justify-center items-center right-10">
+        <div className="relative w-full h-[260px] md:h-[500px] flex justify-center items-center right-10">
           <motion.img
             src={TeacherImg}
             alt="Teacher"
-            className="absolute w-64 h-auto scale-90 top-[40%] left-[35%] transform -translate-x-1/2"
+            className="absolute w-[156.77px] h-[196.68px] scale-90 transform -translate-x-1/2 
+             top-[40%] left-[30%] 
+             md:w-64 md:h-auto md:top-[40%] md:left-[35%]"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -128,14 +130,16 @@ export default function Hero() {
           <img
             src={ChatImg}
             alt="Chat"
-            className="absolute w-32 md:w-48 lg:w-56 h-auto top-[10%] left-[50%] transform -translate-x-1/2"
+            className="absolute w-[130px] h-[130px] top-[12%] left-[50%] transform -translate-x-1/2 
+             md:w-48 md:h-auto md:top-[10%] md:left-[50%]"
             loading="lazy"
           />
 
           <motion.img
             src={StudentImg}
             alt="Student"
-            className="absolute w-32 md:w-48 lg:w-56 h-auto top-[10%] left-[80%] transform -translate-x-1/2"
+            className="absolute w-[130px] h-[130px] top-[12%] left-[80%] transform -translate-x-1/2 
+             md:w-48 md:h-auto md:top-[10%] md:left-[80%]"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.2 }}
